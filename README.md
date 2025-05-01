@@ -20,6 +20,16 @@ An implementation of Total Return Stock Index Model that calculates stock index 
 ## Requirements 
 see 'requirments.txt'
 
+## Usage
+```python
+from index_model import IndexModel
+from datetime import date
+
+model = IndexModel(price_data=mkt)
+index_series = model.calc_index_level(start_date=date(2020,1,1), end_date=date(2020,12,31))
+model.export_values("index_2020.csv")
+model.plot_index()
+
 
 
 
