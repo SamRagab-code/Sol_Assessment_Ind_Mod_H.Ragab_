@@ -1,6 +1,7 @@
 import datetime as dt
 import pandas as pd
 import numpy as np
+import import matplotlib.pyplot as plt
 
 class IndexModel:
     def __init__(self) -> None:
